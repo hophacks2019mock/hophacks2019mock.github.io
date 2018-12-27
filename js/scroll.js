@@ -3,12 +3,20 @@ var transitionActivated = false;
 
 //handles scrolling and disabling the overlay
 window.addEventListener("scroll", function (event) {
-    var scrollPos = this.scrollY;
+    //var scrollPos = this.scrollY;
     var fadeElem = $('.overlay');
+	
+	var h = document.documentElement, 
+    b = document.body,
+    st = 'scrollTop',
+    sh = 'scrollHeight';
+
+var scrollPercent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+
     
     fadeElem.each(function () {
-        var $this = $(this), scrollThreshold = 1480;
-        if (scrollPos > scrollThreshold && !transitionActivated) {
+        var $this = $(this), scrollThreshold = 50;
+        if (scrollPercent > scrollThreshold && !transitionActivated) {
             
 
             //remove all particles
