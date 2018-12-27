@@ -15,7 +15,7 @@ var scrollPercent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 
     
     fadeElem.each(function () {
-        var $this = $(this), scrollThreshold = 50;
+        var $this = $(this), scrollThreshold = 80;
         if (scrollPercent > scrollThreshold && !transitionActivated) {
             
 
