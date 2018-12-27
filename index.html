@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>HopHacks Mock Design</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+
+<body>
+  <div>
+
+    <!–– Overlay Image -->
+    <div>
+    <img src='img/hophackstext.png' class='overlay' id='overlay'>
+    </div>
+    
+    <!–– Particle effects -->
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    
+    <!–– Temporary image to represent navbar. -->
+    <img src='img/navbar.png' class="nav_bar">
+
+    <div>
+    <!–– Background image that gets removed after scrolling. -->
+    <img src='img/zoomed_background.png' class="s_image" id="underlay">
+    </div>
+
+    <div class="container">
+
+      <!–– Same background image repeated because we dont have the vertically long version yet -->
+      <img src='img/pre_background.png' id="main_image">
+      <!–– Button should appear when mouse is over the words "un:cover" -->
+      <button class="reg_btn" onmouseover="hover();" id="registration_button"> Register </button>
+    </div>
+
+
+
+    <img src='img/aftertext.png' class="s_image">
+  </div>
+
+  <!–– JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+  <!–– JS file to detect scroll for fading out the overlay -->
+  <script src="js/scroll.js"></script>
+
+</body>
+
+</html>
